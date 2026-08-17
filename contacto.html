@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contacto - Lo quieres, te lo vendo</title>
 
-    <!-- Mismo CSS externo utilizado por index.html -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS compartido con index.html -->
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
 
 <body>
 
+    <!-- Encabezado -->
     <header>
 
-        <h1>Lo quieres, te lo vendo</h1>
+        <h1 style="font-family: Arial; font-size: 10px;">
+            Lo quieres, te lo vendo
+        </h1>
 
+        <!-- Menú principal -->
         <nav>
+
             <a href="index.html">Inicio</a>
+
+            <a href="index.html#productos">Productos</a>
+
             <a href="contacto.html">Contacto</a>
+
         </nav>
 
     </header>
 
+
+    <!-- Contenido principal -->
     <main>
 
         <section class="contacto">
 
             <h2>Contáctanos</h2>
 
-            <form class="formulario">
+            <p class="descripcion-contacto">
+                Si tienes alguna consulta sobre nuestros productos o pedidos,
+                completa el siguiente formulario y nos pondremos en contacto contigo.
+            </p>
 
-                <label for="nombre">Nombre:</label>
+
+            <!-- Formulario de contacto -->
+            <form class="formulario" action="#" method="post">
+
+                <!-- Nombre -->
+                <label for="nombre">
+                    Nombre completo
+                </label>
+
                 <input
                     type="text"
                     id="nombre"
                     name="nombre"
                     placeholder="Ingrese su nombre"
+                    autocomplete="name"
+                    minlength="3"
+                    maxlength="60"
                     required
                 >
 
-                <label for="correo">Correo electrónico:</label>
+
+                <!-- Correo -->
+                <label for="correo">
+                    Correo electrónico
+                </label>
+
                 <input
                     type="email"
                     id="correo"
                     name="correo"
-                    placeholder="Ingrese su correo"
+                    placeholder="ejemplo@correo.com"
+                    autocomplete="email"
+                    maxlength="100"
                     required
                 >
 
-                <label for="mensaje">Mensaje:</label>
+
+                <!-- Mensaje -->
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
                 <textarea
                     id="mensaje"
                     name="mensaje"
-                    placeholder="Escriba su mensaje"
+                    rows="6"
+                    placeholder="Escriba su mensaje aquí..."
+                    minlength="10"
+                    maxlength="500"
                     required
                 ></textarea>
 
-                <button type="submit">Enviar mensaje</button>
+
+                <!-- Botón -->
+                <button type="submit">
+                    Enviar mensaje
+                </button>
 
             </form>
 
@@ -65,9 +113,16 @@
 
     </main>
 
+
+    <!-- Pie de página -->
     <footer>
-        <p>Equipo Lo quieres, te lo vendo &copy; 2026</p>
+
+        <p>
+            Equipo Lo quieres, te lo vendo &copy; 2026
+        </p>
+
     </footer>
 
 </body>
+
 </html>
