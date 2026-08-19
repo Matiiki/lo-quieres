@@ -1,6 +1,6 @@
-/* =========================================
+/* 
    CONFIGURACIÓN GENERAL
-   ========================================= */
+    */
 
 * {
     box-sizing: border-box;
@@ -24,87 +24,75 @@ body {
 }
 
 
-/* =========================================
+/* 
    ENCABEZADO
-   ========================================= */
+    */
 
 header {
     background-color: white;
-    text-align: center;
 }
 
+/* Título pequeño solicitado por la pauta */
 header h1 {
     margin: 0;
-    padding: 18px;
-}
-
-
-/* =========================================
-   MENÚ
-   ========================================= */
-
-nav {
-    background-color: #0d47a1;
-
-    padding: 16px;
+    padding: 10px;
 
     text-align: center;
 }
 
-nav a {
-    color: white;
 
-    text-decoration: none;
+/* 
+   NAVBAR MATERIALIZE
+    */
 
+nav {
+    background-color: #0d47a1 !important;
+}
+
+nav .brand-logo {
+    color: white !important;
+    font-size: 22px;
     font-weight: bold;
-
-    margin: 0 20px;
-
-    padding: 8px 12px;
-
-    border-radius: 5px;
-
-    transition: 0.3s;
 }
 
-nav a:hover {
-    background-color: #1565c0;
+nav ul a {
+    color: white !important;
+    font-weight: 500;
+}
+
+.sidenav-trigger i {
+    color: white;
 }
 
 
-/* =========================================
+/* 
    CONTENIDO PRINCIPAL
-   ========================================= */
+    */
 
 main {
     flex: 1;
 
     width: 100%;
 
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 40px 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
-/* =========================================
+/* 
    SOBRE NOSOTROS
-   ========================================= */
+    */
 
 .extracto {
-    background-color: white;
-
     max-width: 900px;
 
     margin: 0 auto 50px auto;
 
     padding: 35px;
 
-    text-align: center;
-
     border-radius: 12px;
+
+    background-color: white;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
@@ -119,15 +107,18 @@ main {
 
 .extracto p {
     margin-bottom: 0;
+
+    line-height: 1.6;
 }
 
 
-/* =========================================
-   PRODUCTOS
-   ========================================= */
+/* 
+   SECCIÓN PRODUCTOS
+    */
 
 #productos {
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 #productos h2 {
@@ -135,81 +126,81 @@ main {
 
     font-size: 28px;
 
-    margin-bottom: 30px;
-}
-
-.productos {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 
 
-/* TARJETA DE PRODUCTO */
+/* 
+   CARDS MATERIALIZE
+    */
 
-.producto {
-    width: 30%;
-
-    background-color: white;
-
-    padding: 20px;
+.card {
+    height: 100%;
 
     border-radius: 12px;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
 
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.producto:hover {
+.card:hover {
     transform: translateY(-5px);
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
 }
 
-.producto img {
+
+/* Imágenes de los productos */
+
+.card .card-image img {
     width: 100%;
 
-    height: 200px;
+    height: 230px;
 
     object-fit: cover;
-
-    border-radius: 8px;
 }
 
-.producto h3 {
+
+/* Contenido de la tarjeta */
+
+.card .card-content {
+    min-height: 170px;
+}
+
+.card .card-title {
     color: #0d47a1;
 
-    margin-top: 20px;
+    font-weight: normal;
+
+    font-size: 21px;
 }
 
-.producto p {
+.card .card-content p {
     color: #555;
 
     line-height: 1.5;
 }
 
 
-/* =========================================
+/* 
    CONTACTO
-   ========================================= */
+    */
 
 .contacto {
     width: 100%;
 
-    max-width: 650px;
+    max-width: 700px;
 
-    margin: auto;
+    margin: 20px auto;
 
-    background-color: white;
-
-    padding: 35px;
+    padding: 40px;
 
     border-radius: 12px;
+
+    background-color: white;
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
 }
@@ -217,172 +208,165 @@ main {
 .contacto h2 {
     margin-top: 0;
 
-    text-align: center;
+    margin-bottom: 15px;
 
-    color: #0d47a1;
+    color: #ff0000;
 
     font-size: 28px;
-
-    margin-bottom: 30px;
 }
 
 
-/* =========================================
-   FORMULARIO
-   ========================================= */
+/* Descripción de contacto */
 
-form {
-    display: flex;
+.descripcion-contacto {
+    max-width: 550px;
 
-    flex-direction: column;
+    margin: 0 auto 35px auto;
+
+    color: #666;
+
+    line-height: 1.6;
 }
 
-form label {
-    font-weight: bold;
 
-    margin-bottom: 8px;
+/* 
+   FORMULARIO MATERIALIZE
+    */
 
+/* Espacio entre cada campo */
+
+.input-field {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* Color de los iconos */
+
+.input-field .prefix {
+    color: #757575;
+
+    transition: color 0.3s;
+}
+
+
+/* Icono cuando el campo está seleccionado */
+
+.input-field .prefix.active {
+    color: #0d47a1;
+}
+
+
+/* Color inferior de los input cuando tienen foco */
+
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.input-field textarea.materialize-textarea:focus {
+    border-bottom: 1px solid #0d47a1 !important;
+
+    box-shadow: 0 1px 0 0 #0d47a1 !important;
+}
+
+
+/* Color de los labels cuando el campo tiene foco */
+
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.input-field textarea.materialize-textarea:focus + label {
+    color: #0d47a1 !important;
+}
+
+
+/* Área de mensaje */
+
+textarea.materialize-textarea {
+    min-height: 100px;
+}
+
+
+/* 
+   BOTÓN
+    */
+
+.btn {
+    background-color: #0d47a1 !important;
+    color: white !important;
+    border-radius: 6px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.btn .material-icons {
+    color: white !important;
+}
+
+.btn:hover {
+    background-color: #1565c0 !important;
+}
+
+
+/* ========================================
+   SIDENAV - MENÚ CELULAR
+    */
+
+.sidenav li > a {
     color: #333;
+
+    font-weight: 500;
 }
 
-form input,
-form textarea {
-    width: 100%;
-
-    padding: 12px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 6px;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 15px;
-
-    outline: none;
+.sidenav li > a i.material-icons {
+    color: #049af1;
+}
+.sidenav-trigger i {
+    color: rgb(130, 203, 245);
 }
 
-form input:focus,
-form textarea:focus {
-    border-color: #0d47a1;
-
-    box-shadow: 0 0 5px rgba(13, 71, 161, 0.25);
+.sidenav li > a {
+    color: #333;
+    font-weight: 500;
 }
 
-form textarea {
-    resize: vertical;
-
-    min-height: 130px;
+.sidenav li > a i.material-icons {
+    color: #0d47a1;
 }
 
 
-/* BOTÓN */
-
-form button {
-    background-color: #0d47a1;
-
-    color: white;
-
-    border: none;
-
-    padding: 13px;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    border-radius: 6px;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-form button:hover {
-    background-color: #1565c0;
-}
-
-
-/* =========================================
+/* 
    PIE DE PÁGINA
-   ========================================= */
+    */
 
-footer {
-    background-color: black;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 22px;
-
-    width: 100%;
-
+footer.page-footer {
     margin-top: auto;
+
+    padding-top: 0;
+
+    background-color: black !important;
 }
 
-footer p {
-    margin: 0;
+footer .footer-copyright {
+    background-color: black !important;
+
+    min-height: 70px;
 }
 
-
-/* =========================================
-   CELULAR
-   ========================================= */
-
-@media (max-width: 600px) {
-
-    main {
-        padding: 25px 15px;
-    }
-
-    nav a {
-        display: block;
-
-        margin: 8px 0;
-    }
-
-    .extracto {
-        padding: 25px 20px;
-    }
-
-    .productos {
-        flex-direction: column;
-    }
-
-    .producto {
-        width: 100%;
-    }
-
-    .contacto {
-        padding: 25px 20px;
-    }
+footer .container {
+    color: white;
 }
 
 
-/* =========================================
-   TABLET
-   ========================================= */
+/* 
+   PEQUEÑOS AJUSTES
+    */
 
-@media (min-width: 601px) and (max-width: 1024px) {
+/*
+    Materialize ya se encarga de la
+    responsividad mediante:
 
-    .producto {
-        width: 45%;
-    }
+    s12 = celular
+    m6  = tablet
+    l4  = escritorio
 
-}
-
-
-/* =========================================
-   ESCRITORIO
-   ========================================= */
-
-@media (min-width: 1025px) {
-
-    .producto {
-        width: 30%;
-    }
-
-}
+    Por eso NO necesitamos usar @media
+    para organizar los productos.
+*/

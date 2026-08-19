@@ -2,229 +2,388 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Lo quieres, te lo vendo</title>
 
-    <!-- Conexión con el archivo CSS externo -->
-    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Iconos de Material Design -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous">
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+
+    <!-- Materialize CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/css/materialize.min.css">
+
+
+    <!-- CSS propio -->
+    <link
+        rel="stylesheet"
+        href="assets/style.css">
+
 </head>
-    
+
+
 <body>
 
-    <!-- Encabezado de la página -->
+
+    <!--  -->
+    <!-- ENCABEZADO                                -->
+    <!--  -->
+
     <header>
 
+        <!-- Título solicitado por la pauta -->
         <h1 style="font-family: Arial; font-size: 10px;">
             Lo quieres, te lo vendo
         </h1>
 
-        <!-- Menú principal -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-    <div class="container">
+        <!--  -->
+        <!-- MENÚ MATERIALIZE                          -->
+        <!--  -->
 
-        <a class="navbar-brand" href="index.html">
-            Lo quieres, te lo vendo
-        </a>
+        <nav class="blue darken-4">
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Mostrar menú">
+            <div class="nav-wrapper container">
 
-            <span class="navbar-toggler-icon"></span>
+                <!-- Nombre de la tienda -->
+                <a
+                    href="index.html"
+                    class="brand-logo">
 
-        </button>
+                    Lo quieres, te lo vendo
 
-        <div
-            class="collapse navbar-collapse"
-            id="menuPrincipal">
+                </a>
 
-            <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
+                <!-- Botón hamburguesa para celular -->
+                <a
+                    href="#!"
+                    data-target="menu-movil"
+                    class="sidenav-trigger">
 
-                    <a
-                        class="nav-link"
-                        href="index.html">
-                        Inicio
-                    </a>
+                    <i class="material-icons">
+                        menu
+                    </i>
 
-                </li>
+                </a>
 
-                <li class="nav-item">
 
-                    <a
-                        class="nav-link"
-                        href="#productos">
-                        Productos
-                    </a>
+                <!-- Menú escritorio -->
+                <ul class="right hide-on-med-and-down">
 
-                </li>
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
 
-                <li class="nav-item">
+                    <li>
+                        <a href="#productos">
+                            Productos
+                        </a>
+                    </li>
 
-                    <a
-                        class="nav-link"
-                        href="contacto.html">
-                        Contacto
-                    </a>
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
 
-                </li>
+                </ul>
 
-            </ul>
+            </div>
 
-        </div>
+        </nav>
 
-    </div>
 
-</nav>
+        <!--  -->
+        <!-- MENÚ PARA CELULAR                         -->
+        <!--  -->
+
+        <ul
+            class="sidenav"
+            id="menu-movil">
+
+            <li>
+                <a
+                    href="index.html"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        home
+                    </i>
+
+                    Inicio
+
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                    href="#productos"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+
+                    Productos
+
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                    href="contacto.html"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        email
+                    </i>
+
+                    Contacto
+
+                </a>
+            </li>
+
+        </ul>
+
     </header>
 
 
-    <!-- Contenido principal -->
+
+    <!--  -->
+    <!-- CONTENIDO PRINCIPAL                       -->
+    <!--  -->
+
     <main>
 
-        <!-- Extracto de la empresa -->
-        <section class="extracto">
 
-            <h2>Sobre nosotros</h2>
+        <!--  -->
+        <!-- SOBRE NOSOTROS                            -->
+        <!--  -->
 
-            <p style="font-size: 14px; line-height: 1.6; color: #333;">
-                Lo quieres, te lo vendo es un emprendimiento dedicado a la
-                comercialización de productos en línea. Nuestro objetivo es
-                ofrecer a nuestros clientes una forma simple, rápida y segura
-                de conocer nuestros productos y realizar sus compras.
-                Buscamos mejorar constantemente la gestión de pedidos,
-                entregas y atención de nuestros clientes mediante el uso
-                de herramientas tecnológicas.
-            </p>
+        <section class="container">
+
+            <div class="card-panel extracto center-align">
+
+                <h2>
+                    Sobre nosotros
+                </h2>
+
+                <p style="font-size: 14px; line-height: 1.6; color: #333;">
+
+                    Lo quieres, te lo vendo es un emprendimiento dedicado
+                    a la comercialización de productos en línea.
+
+                    Nuestro objetivo es ofrecer a nuestros clientes una
+                    forma simple, rápida y segura de conocer nuestros
+                    productos y realizar sus compras.
+
+                    Buscamos mejorar constantemente la gestión de pedidos,
+                    entregas y atención de nuestros clientes mediante el
+                    uso de herramientas tecnológicas.
+
+                </p>
+
+            </div>
 
         </section>
 
 
-        <section id="productos" class="container my-5">
 
-    <h2 class="text-center mb-4">
-        Nuestros productos
-    </h2>
+        <!--  -->
+        <!-- PRODUCTOS                                 -->
+        <!--  -->
 
-    <div class="row g-4">
+        <section
+            id="productos"
+            class="container">
 
-
-        <!-- Producto 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-
-            <div class="card h-100 shadow-sm">
-
-                <img
-                    src="assets/img/mouse.jpg"
-                    class="card-img-top img-fluid"
-                    alt="Producto 1">
-
-                <div class="card-body text-center">
-
-                    <h3 class="card-title h5">
-                        Producto 1
-                    </h3>
-
-                    <p class="card-text">
-                        Mouse inalambirco con larga duracion de bateria profesional :)
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
+            <h2 class="center-align">
+                Nuestros productos
+            </h2>
 
 
-        <!-- Producto 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
+            <div class="row">
 
-            <div class="card h-100 shadow-sm">
 
-                <img
-                    src="assets/img/D_NQ_NP_2X_978223-MLC43101111414_082020-F.webp"
-                    class="card-img-top img-fluid"
-                    alt="Teclado Gamer">
+                <!-- ================================= -->
+                <!-- PRODUCTO 1                        -->
+                <!-- ================================= -->
 
-                <div class="card-body text-center">
+                <div class="col s12 m6 l4">
 
-                    <h3 class="card-title h5">
-                        Producto 2
-                    </h3>
+                    <div class="card">
 
-                    <p class="card-text">
-                        Teclado gamer de alto rendimiento listo para ser ocupado por horas
-                    </p>
+                        <div class="card-image">
+
+                            <img
+                                src="assets/img/mouse.jpg"
+                                class="responsive-img"
+                                alt="Mouse inalámbrico">
+
+                        </div>
+
+
+                        <div class="card-content center-align">
+
+                            <span class="card-title">
+                                Mouse inalámbrico
+                            </span>
+
+                            <p>
+                                Mouse inalámbrico profesional con
+                                larga duración de batería, ideal
+                                para trabajar o jugar durante horas.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </div>
 
 
-        <!-- Producto 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
+                <!-- ================================= -->
+                <!-- PRODUCTO 2                        -->
+                <!-- ================================= -->
 
-            <div class="card h-100 shadow-sm">
+                <div class="col s12 m6 l4">
 
-                <img
-                    src="assets/img/PC-GAMEMAX-VISTA-COC-AB-01.jpg"
-                    class="card-img-top img-fluid"
-                    alt="Producto 3">
+                    <div class="card">
 
-                <div class="card-body text-center">
+                        <div class="card-image">
 
-                    <h3 class="card-title h5">
-                        Producto 3
-                    </h3>
+                            <img
+                                src="assets/img/D_NQ_NP_2X_978223-MLC43101111414_082020-F.webp"
+                                class="responsive-img"
+                                alt="Teclado gamer">
 
-                    <p class="card-text">
-                        Computadora gamer de alta gama corren todos los juegos
-                    </p>
+                        </div>
+
+
+                        <div class="card-content center-align">
+
+                            <span class="card-title">
+                                Teclado Gamer
+                            </span>
+
+                            <p>
+                                Teclado gamer de alto rendimiento,
+                                diseñado para entregar comodidad
+                                durante largas sesiones de uso.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+
+
+                <!-- ================================= -->
+                <!-- PRODUCTO 3                        -->
+                <!-- ================================= -->
+
+                <div class="col s12 m6 l4">
+
+                    <div class="card">
+
+                        <div class="card-image">
+
+                            <img
+                                src="assets/img/PC-GAMEMAX-VISTA-COC-AB-01.jpg"
+                                class="responsive-img"
+                                alt="Computadora gamer">
+
+                        </div>
+
+
+                        <div class="card-content center-align">
+
+                            <span class="card-title">
+                                Computadora Gamer
+                            </span>
+
+                            <p>
+                                Computadora gamer de alto rendimiento,
+                                preparada para ejecutar videojuegos
+                                y aplicaciones exigentes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
-        </div>
+        </section>
 
-    </div>
-
-</section>
 
     </main>
 
 
-    <!-- Pie de página -->
-    <footer>
 
-        <p>
-            Equipo Lo quieres, te lo vendo - 2026
-        </p>
+    <!--  -->
+    <!-- PIE DE PÁGINA                             -->
+    <!--  -->
+
+    <footer class="page-footer black">
+
+        <div class="footer-copyright">
+
+            <div class="container center-align">
+
+                Equipo Lo quieres, te lo vendo &copy; 2026
+
+            </div>
+
+        </div>
 
     </footer>
 
+
+
+    <!--  -->
+    <!-- MATERIALIZE JAVASCRIPT                    -->
+    <!--  -->
+
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous">
+        src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/js/materialize.min.js">
     </script>
+
+
+    <!-- Inicialización del menú para celular -->
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const elementos =
+                document.querySelectorAll('.sidenav');
+
+            M.Sidenav.init(elementos);
+
+        });
+
+    </script>
+
 
 </body>
 

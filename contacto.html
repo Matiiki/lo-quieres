@@ -9,116 +9,311 @@
 
     <title>Contacto - Lo quieres, te lo vendo</title>
 
-    <!-- Mismo CSS externo utilizado por index.html -->
-    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Iconos de Material Design -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+
+    <!-- Materialize CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/css/materialize.min.css">
+
+
+    <!-- CSS propio -->
+    <link
+        rel="stylesheet"
+        href="assets/style.css">
+
 </head>
+
 
 <body>
 
-    <!-- Encabezado -->
+
+    <!-- ENCABEZADO -->
     <header>
 
         <h1 style="font-family: Arial; font-size: 10px;">
             Lo quieres, te lo vendo
         </h1>
 
-        <!-- Menú principal -->
-        <nav>
 
-            <a href="index.html">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="contacto.html">Contacto</a>
+        <!-- MENÚ MATERIALIZE -->
+        <nav class="blue darken-4">
+
+            <div class="nav-wrapper container">
+
+                <a
+                    href="index.html"
+                    class="brand-logo">
+                    Lo quieres, te lo vendo
+                </a>
+
+
+                <!-- Botón hamburguesa -->
+                <a
+                    href="#!"
+                    data-target="menu-movil"
+                    class="sidenav-trigger">
+
+                    <i class="material-icons">
+                        menu
+                    </i>
+
+                </a>
+
+
+                <!-- Menú escritorio -->
+                <ul class="right hide-on-med-and-down">
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#productos">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </nav>
+
+
+        <!-- MENÚ CELULAR -->
+        <ul
+            class="sidenav"
+            id="menu-movil">
+
+            <li>
+
+                <a
+                    href="index.html"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        home
+                    </i>
+
+                    Inicio
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="index.html#productos"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+
+                    Productos
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="contacto.html"
+                    class="sidenav-close">
+
+                    <i class="material-icons">
+                        email
+                    </i>
+
+                    Contacto
+
+                </a>
+
+            </li>
+
+        </ul>
 
     </header>
 
 
-    <!-- Contenido principal -->
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <section class="contacto">
+        <div class="container">
 
-            <h2>Contáctanos</h2>
+            <section class="contacto card-panel">
 
-            <p class="descripcion-contacto">
-                Si tienes alguna consulta sobre nuestros productos o pedidos,
-                completa el siguiente formulario y nos pondremos en contacto contigo.
-            </p>
-
-
-            <!-- Formulario de contacto -->
-            <form class="formulario" action="#" method="post">
-
-                <!-- Nombre -->
-                <label for="nombre">
-                    Nombre completo
-                </label>
-
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Ingrese su nombre"
-                    autocomplete="name"
-                    minlength="3"
-                    maxlength="60"
-                    required
-                >
+                <h2 class="center-align">
+                    Contáctanos
+                </h2>
 
 
-                <!-- Correo -->
-                <label for="correo">
-                    Correo electrónico
-                </label>
+                <p class="descripcion-contacto center-align">
 
-                <input
-                    type="email"
-                    id="correo"
-                    name="correo"
-                    placeholder="ejemplo@correo.com"
-                    autocomplete="email"
-                    maxlength="100"
-                    required
-                >
+                    Si tienes alguna consulta sobre nuestros productos
+                    o pedidos, completa el siguiente formulario y nos
+                    pondremos en contacto contigo.
+
+                </p>
 
 
-                <!-- Mensaje -->
-                <label for="mensaje">
-                    Mensaje
-                </label>
-
-                <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows="6"
-                    placeholder="Escriba su mensaje aquí..."
-                    minlength="10"
-                    maxlength="500"
-                    required
-                ></textarea>
+                <!-- FORMULARIO MATERIALIZE -->
+                <form
+                    action="#"
+                    method="post">
 
 
-                <!-- Botón -->
-                <button type="submit">
-                    Enviar mensaje
-                </button>
+                    <!-- Nombre -->
+                    <div class="input-field">
 
-            </form>
+                        <i class="material-icons prefix">
+                            person
+                        </i>
 
-        </section>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            autocomplete="name"
+                            minlength="3"
+                            maxlength="60"
+                            required>
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                    </div>
+
+
+                    <!-- Correo -->
+                    <div class="input-field">
+
+                        <i class="material-icons prefix">
+                            email
+                        </i>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            autocomplete="email"
+                            maxlength="100"
+                            required>
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                    </div>
+
+
+                    <!-- Mensaje -->
+                    <div class="input-field">
+
+                        <i class="material-icons prefix">
+                            message
+                        </i>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            class="materialize-textarea"
+                            minlength="10"
+                            maxlength="500"
+                            required>
+                        </textarea>
+
+                        <label for="mensaje">
+                            Escriba su mensaje
+                        </label>
+
+                    </div>
+
+
+                    <!-- Botón -->
+                    <div class="center-align">
+
+                        <button
+                            class="btn waves-effect waves-light blue darken-4"
+                            type="submit">
+
+                            Enviar mensaje
+
+                            <i class="material-icons right">
+                                send
+                            </i>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
 
     </main>
 
 
-    <!-- Pie de página -->
-    <footer>
 
-        <p>
-            Equipo Lo quieres, te lo vendo &copy; 2026
-        </p>
+    <!-- PIE DE PÁGINA -->
+    <footer class="page-footer black">
+
+        <div class="footer-copyright">
+
+            <div class="container center-align">
+
+                Equipo Lo quieres, te lo vendo &copy; 2026
+
+            </div>
+
+        </div>
 
     </footer>
+
+
+
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/js/materialize.min.js">
+    </script>
+
+
+    <!-- Inicialización del menú móvil -->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const elementos =
+                document.querySelectorAll('.sidenav');
+
+            M.Sidenav.init(elementos);
+
+        });
+
+    </script>
+
 
 </body>
 
