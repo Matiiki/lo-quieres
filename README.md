@@ -20,22 +20,20 @@ HTML5: estructura y contenido de la página.
 CSS3: estilos personalizados mediante el archivo assets/style.css.
 Bootstrap 5.3.8: framework utilizado actualmente para facilitar el diseño responsive y algunos componentes visuales.
 JavaScript: utilizado por Bootstrap para funcionalidades como el menú desplegable en dispositivos pequeños.
-Estructura del proyecto
+
+Estructura del proyecto:
+
 proyecto/
-│
-├── index.html
-│
-├── contacto.html
-│
-├── assets/
-│   ├── style.css
-│   │
-│   └── img/
-│       ├── mouse.jpg
-│       ├── D_NQ_NP_2X_978223-MLC43101111414_082020-F.webp
-│       └── PC-GAMEMAX-VISTA-COC-AB-01.jpg
-│
-└── README.md
+index.html
+contacto.html
+    assets/
+        style.css
+        img/
+            mouse.jpg
+            D_NQ_NP_2X_978223-MLC43101111414_082020-F.webp
+            PC-GAMEMAX-VISTA-COC-AB-01.jpg
+README.md
+
 Estructura de la página
 
 El archivo principal es index.html.
